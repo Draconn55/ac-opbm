@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'Andrei Cosma Digital Garden',
+  author: 'Andrei Cosma',
+  headerTitle: 'AC',
+  description: 'A digital garden which acts as a one person business model : blog : resume : portfolio website',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
