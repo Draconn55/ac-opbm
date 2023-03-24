@@ -55,6 +55,15 @@ export default function Home({ posts }) {
         </svg>
       </div>
 
+      <div className="pl-20 pt-20 pb-48">
+        <p className="pb-5 text-2xl">Hello, I am</p>
+        <p className="inline bg-gradient-to-r from-indigo-200 via-green-400 to-yellow-200 bg-clip-text font-display text-5xl text-transparent">
+          Andrei Cosma
+        </p>
+        <p></p>
+        
+      </div>
+
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
