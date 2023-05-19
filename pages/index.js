@@ -4,7 +4,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
-
+import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import NewsletterForm from '@/components/NewsletterForm'
 
 const MAX_DISPLAY = 5
@@ -19,7 +19,13 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="absolute left-1/2 top-0 -z-10 ml-[-38rem] h-[25rem] w-[81.25rem] dark:[mask-image:linear-gradient(white,transparent)]">
+      <div
+        className="absolute left-1/2 top-0 -z-10
+        ml-[-13rem] h-[15rem] w-[25rem]
+       dark:[mask-image:linear-gradient(white,transparent)] md:ml-[-20rem] md:h-[25rem] 
+       md:w-[50rem] lg:h-[25rem] xl:ml-[-38rem]
+       xl:w-[80rem]"
+      >
         <div className="absolute inset-0 bg-gradient-to-r from-[#36b49f] to-[#DBFF75] opacity-40 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] dark:from-[#36b49f]/30 dark:to-[#DBFF75]/30 dark:opacity-100">
           <svg
             aria-hidden="true"
@@ -55,13 +61,39 @@ export default function Home({ posts }) {
         </svg>
       </div>
 
-      <div className="pl-20 pt-20 pb-48">
-        <p className="pb-5 text-2xl">Hello, I am</p>
-        <p className="inline bg-gradient-to-r from-indigo-200 via-green-400 to-yellow-200 bg-clip-text font-display text-5xl text-transparent">
-          Andrei Cosma
+      <div className="pl-0 pt-5 pb-10 sm:pt-10">
+        <h2 className="text-center text-2xl font-bold leading-8 tracking-tight sm:text-left">
+          Welcome to my website!
+        </h2>
+        <p className="pt-5 text-justify text-lg leading-7 text-gray-500 dark:text-gray-400">
+          I am
+          <span
+            className="inline bg-gradient-to-r from-green-400 via-indigo-400 to-purple-500 
+          bg-clip-text pl-3 pr-3 text-justify 
+          text-3xl font-bold text-transparent 
+          dark:from-indigo-200 dark:via-green-400 dark:to-yellow-200">
+            Andrei Cosma
+          </span>
+          a Full Stack Developer with over 8 years of experience in the field. My curiosity has led
+          me to explore various domains such as Programming, Gaming, Finance, Investing, Trading,
+          Philosophy, Crypto and Blockchain technologies.
+          {/* My passion for technology has led me to explore various domains such as Programming, Data Science, AI, Crypto and Blockchain technologies. */}
         </p>
-        <p></p>
-        
+        <div>
+          <p className="pt-5 text-justify text-gray-500 dark:text-gray-400">
+            Through my extensive experience and constant curiosity, I have honed my skills in
+            developing innovative solutions that help businesses achieve their goals. I am always
+            eager to learn and keep up with the latest trends in the industry, and I believe that
+            this is what sets me apart from others.
+          </p>
+          {/* <p className='pt-5 text-justify text-gray-500 dark:text-gray-400'>
+          I am dedicated to delivering high-quality work that not only meets but exceeds expectations. My goal is to provide my clients with the best possible service, and I strive to achieve this through continuous improvement and learning.
+          </p> */}
+          {/* <p className="pt-5 text-justify text-gray-500 dark:text-gray-400">
+            Thank you for visiting my website, and I look forward to the opportunity to work with you!
+            Thank you for visiting my website!
+          </p> */}
+        </div>
       </div>
 
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -141,6 +173,7 @@ export default function Home({ posts }) {
           <NewsletterForm />
         </div>
       )}
+      <ScrollTopAndComment />
     </>
   )
 }

@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Andrei Cosma Digital Garden',
+  title: 'Andrei Cosma\'s Website',
   author: 'Andrei Cosma',
   headerTitle: 'AC',
   description: 'A digital garden which acts as a one person business model : blog : resume : portfolio website',

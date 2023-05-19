@@ -9,9 +9,6 @@ linkedin: www.linkedin.com/in/cosmandrei
 github: https://github.com
 ---
 
-Hello, I'm Andrei Cosma and I am a Full Stack Developer. 
----
-
 I like to consider myself an open minded person and I'm easily inspired by positive change. 
 I aspire to inspire and I enjoy getting the big picture, coupling business and organisational values together.
 
